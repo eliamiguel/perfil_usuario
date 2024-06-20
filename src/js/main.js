@@ -11,6 +11,12 @@ const getBanco = JSON.parse(localStorage.getItem('dbUsuario'))
 const setBAnco = (dbUsuario) => localStorage.setItem('dbUsuario', JSON.stringify(dbUsuario))
  
 
+const editardb = (usuario, index)=>{
+    const banco = getBanco()[index]
+    banco.index = usuario
+    setBAnco(banco)
+}
+
 // limpar 
 const limparCampos =()=>{
   document.getElementById('nome').value = '';
@@ -38,32 +44,29 @@ const validarCampos = ()=> {
    }
 
    if(email <= 0 ){
+       const msg = document.getElementById('emailErro')
+      msg.innerHTML= 'o campo email esta vazio ou incorreto'
+      msg.classList.add('error')
+      return
 
-        const msg = document.getElementById('emailErro')
-        msg.innerHTML= 'o campo email esta vazio ou incorreto'
-        msg.classList.add('error')
-        return
-
-    }else{
-        const msg = document.getElementById('emailErro')
-        msg.innerHTML= ''
-        msg.classList.remove('error')
-    
+   }else{
+       const msg = document.getElementById('emailErro')
+       msg.innerHTML= ''
+       msg.classList.remove('error')
    }
 
    if(telefone <= 0 ){
 
-    const msg = document.getElementById('telefoneErro')
-    msg.innerHTML= 'o campo telefone esta vazio ou incorreto'
-    msg.classList.add('error')
-     return
+       const msg = document.getElementById('telefoneErro')
+       msg.innerHTML= 'o campo telefone esta vazio ou incorreto'
+       msg.classList.add('error')
+       return
 
    }else{
 
-    const msg = document.getElementById('telefoneErro')
-    msg.innerHTML= ''
-    msg.classList.remove('error')
-
+      const msg = document.getElementById('telefoneErro')
+      msg.innerHTML= ''
+      msg.classList.remove('error')
    }
 
    return true
