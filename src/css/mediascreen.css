@@ -1,0 +1,59 @@
+/* Responsividade  geral*/
+@media (max-width: 600px) {
+  .header .nome {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .containerDados {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+
+  .containerFormulario #form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .containerFormulario #form input {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .containerFormulario #form button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Responsividade  Formulario*/
+
+@media (max-width: 600px) {
+  .header .nome {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .containerDados {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+
+  .containerFormulario #form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .containerFormulario #form input {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .containerFormulario #form button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+

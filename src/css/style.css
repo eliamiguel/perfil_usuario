@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: black;
+  --cor-secundaria: antiquewhite;
+  --cor-terciaria: rgb(87, 82, 76);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 0 10px var(--cor-primaria);
+  padding: 10px;
+}
+
+.header .nome {
+  margin-left: 200px;
+}
+
+.containerDados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70vw;
+  margin: 50px auto;
+  gap:30px;
+}
+
+.containerDadosCadastrados {
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.containerDadosCadastrados .paragravo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.containerDadosCadastrados .paragravo span {
+  font-weight: 100;
+}
+
+.containerDadosCadastrados .divImagem img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.containerFormulario {
+  text-align: center;
+}
+
+.containerFormulario .subtitulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.containerFormulario #form {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.containerFormulario #form label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.containerFormulario #form .inputbox {
+  margin: 10px 0;
+}
+
+.containerFormulario #form input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--cor-secundaria);
+  font-size: 16px;
+}
+
+.containerFormulario #form button {
+  padding: 7px 18px;
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 2px solid var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.error {
+  margin-top: 5px;
+  color: var(--cor-primaria);
+}
+
+
+.error label {
+  color: var(--cor-primaria);
+}
+
+.text-error {
+  position: relative;
+  top: 80px;
+  font-size: 14px;
+  color: red;
+}
+
+.testeApi {
+  opacity: 0;
+}
+
